@@ -143,16 +143,16 @@ const Manager = () => {
         <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-green-400 opacity-20 blur-[100px]"></div>
     </div>
 
-    <div className="md:mycontainer md:p-2 p-2">
+    <div className="mycontainer p-3 min-h-[87.2vh]">
         <h1 className='text-4xl font-bold text-center'>
             <span className='text-green-500'>&lt;</span>
                     Paas
             <span className='text-green-500'>OP/&gt;</span>
         </h1>
         <p className='text-green-900 text-lg text-center'>Your own Password Manager</p>
-        <div className='flex flex-col tlordiconcopy ext-black p-4 gap-8 items-center'>
+        <div className='flex flex-col lordiconcopy text-black p-4 gap-8 items-center'>
             <input value={form.site} onChange={handleChange} className='rounded-full border border-green-500 w-full px-4 py-1' placeholder='Enter website URL' type="text" name="site" id="site" />
-            <div className="flex flex-col md:flex-row md:gap-3 w-full gap-8">
+            <div className="flex flex-col md:flex-row w-full justify-between gap-8">
               <input value={form.username} onChange={handleChange} className='rounded-full border border-green-500 w-full px-4 py-1' placeholder='Enter Username' type="text" name="username" id="username" />
               <div className="relative">
                 <input ref={passwordRef} value={form.password} onChange={handleChange} className='rounded-full border border-green-500 w-full px-4 py-1' placeholder='Enter Password' type="password" name="password" id="password" />
